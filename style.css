@@ -1,0 +1,153 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*{
+
+  padding: 0;
+  margin: 0;
+}
+html{
+   scroll-behavior: smooth;
+}
+
+@font-face{
+
+  font-family: 'Etudenoireregular';
+  src:url('./fonts/etudenoireregular.ttf') format('truetype') ;
+}
+@font-face{
+
+  font-family: 'Etudenoirelight';
+  src:url('./fonts/etudenoirelight.ttf') format('truetype') ;
+}
+@font-face{
+
+  font-family: 'Etudenoiremedium';
+  src:url('./fonts/etudenoiremedium.ttf') format('truetype') ;
+}
+@font-face{
+
+  font-family: 'Etudenoirebold';
+  src:url('fonts/etudenoirebold.ttf') format('truetype') ;
+}
+
+body{
+  font-family: 'Etudenoiremedium', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  margin: 0 auto; background: #7a79798c;
+  /* overflow: hidden; */
+  
+}
+
+a {
+  text-decoration: none; /* Убирает подчёркивание */
+  color: inherit; /* Делает цвет текста таким же, как у окружающего текста */
+  font: inherit; /* Унаследует шрифт от родительского элемента */
+  background: none; /* Убирает любые фоны (если есть) */
+  padding: 0; /* Убирает внутренние отступы */
+  margin: 0; /* Убирает внешние отступы */
+  border: none; /* Убирает рамки */
+}
+
+ul, li {
+  margin: 0; /* Убирает отступы */
+  padding: 0; /* Убирает внутренние отступы */
+  list-style: none; /* Убирает маркеры */
+}
+
+main{
+  background-color: white;
+}
+footer{
+  color: white;
+  background-color: black;
+}
+section{
+  /* max-height: 100vh; */
+  overflow: hidden;
+  transition: background 1.5s ease;
+  /* min-height: 100vh; */
+}
+.btn{
+  background-color: #fff;
+  width: max-content !important;
+  font-family: 'Etudenoiremedium', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  border-style: none;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 30px 25px 30px;
+  border-radius: 999px;
+  position: relative;
+  
+}
+
+.amazon{
+  /* padding-top: 10px; */
+  margin-top: auto; /* Сдвигаем второй объект вниз */
+  transform: translateY(5px);
+}
+
+.btn:hover{
+  transition: all 0.3s ease; /* Плавный переход */
+background-color: #818181;
+
+
+}
+.footer-li{
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding:  50px;
+  align-items: center;
+}
+.footer-priv{
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 900px){
+  .footer-li{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-logo{
+   order: -1; 
+  }
+
+}
+@media (max-width: 700px){
+  .btn{
+    font-size: 20px;
+  padding: 20px 30px 20px 30px;
+min-width: 286px;
+  }
+  .amazon{
+    width: 76px;
+  }
+  
+}
+@media (max-width: 460px){
+  .footer-li{
+    align-items: start;
+    padding: 30px 20px;
+  }
+  .footer-priv{
+    flex-direction: column;
+  }
+}
+
+

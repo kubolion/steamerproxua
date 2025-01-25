@@ -1,0 +1,63 @@
+.main-steam{  
+    padding-top: 40px; 
+    width: 100%; 
+    background-size: cover;
+    background-color: black  ;
+    /* background-image: url(/image/mainsteam.svg); */
+    /* background-repeat: no-repeat; */
+    background-repeat: round no-repeat; 
+    background-size: contain;
+    
+     
+}
+.header-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 78px;
+    
+}
+
+ .sds{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ }
+ .btn-st{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+ }
+ .steamerf{
+    width: 100%; /* Ширина изображения не превышает ширину родителя */
+    height: auto; /* Сохраняется пропорция изображения */
+    display: block; /* Избавляемся от дополнительных отступов */
+    max-height: 750px ;
+ }
+
+ @media (max-width: 700px){
+   
+   .h-l img{
+      width: 140px;
+      height: auto;
+   }
+   .header-nav{
+      gap: 40px;
+   }
+
+ }
+ @media (max-width: 600px){
+.main-steam{
+   padding-top: 30px;
+}
+   .steamerf{
+   width: 600px;
+   height: 260px;
+   overflow: hidden;
+}
+   
+ }
+
