@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -509,17 +509,26 @@
         });
      </script>
      <script>
-        // Получаем форму по ID
 document.getElementById("product-form").addEventListener("submit", function (event) {
-  event.preventDefault(); // Предотвращаем стандартное поведение формы
+  event.preventDefault();
+
+  const formData = new FormData(this);
   
-  // Здесь можно вставить код отправки формы через AJAX, если требуется
-  
-  // Отображаем сообщение об успешной отправке
-  alert("Форма успешно отправлена! Спасибо за ваш запрос.");
-  
-  // Дополнительно: если форма должна сбрасываться после отправки
-  this.reset();
+  fetch("/submit-form.php", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => {
+      if (response.ok) {
+        alert("Форма успешно отправлена! Спасибо за ваш запрос.");
+        this.reset();
+      } else {
+        alert("Произошла ошибка при отправке. Попробуйте снова.");
+      }
+    })
+    .catch(() => {
+      alert("Произошла ошибка при отправке. Попробуйте снова.");
+    });
 });
      </script>
 
