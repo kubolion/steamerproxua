@@ -128,6 +128,7 @@ text-decoration-skip-ink: none;
     text-transform: uppercase;
     background-color: #fff;
     color: black;
+    font-size: 20px;
 
 }
 
@@ -273,6 +274,17 @@ line-height:189.05px;
     align-items: center;
     gap: 10px;
 }
+
+
+.about{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    
+}
+
 
 /* s7 */
 
@@ -651,6 +663,12 @@ font-size: 200px;
 
 
 @media (max-width: 900px){
+    .info-product-one{
+        font-size: 16px;
+    }
+    .about{
+        gap: 30px;
+    }
     .rew-btn-mob{
         margin: 0 auto;
         display: block;
@@ -777,6 +795,8 @@ display: block;
 
         width: 400px;
             }
+
+
             /* s8 */
             .rewiews{
                 font-size: 32px;
