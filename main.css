@@ -65,7 +65,7 @@ text-decoration-skip-ink: none;
 .three-tw{
     
     
-    font-size: 126px;
+    font-size: 122px;
     font-weight: 700;
     line-height: 132.34px;
     text-align: left;
@@ -234,7 +234,7 @@ font-size: 180px;
 line-height:189.05px;
 }
 .choose-two{
-    font-size: 98px;
+    font-size: 90px;
     line-height:100.83px;
 
 
@@ -284,7 +284,117 @@ iframe{
     height: 900px;
 }
 
+.form-title{
+    font-family: 'Etudenoiremedium';
+    font-size: 64px;
+    max-width: 641px;
+    font-weight: 700;
+}
+.s-form{
+    padding:  50px 0;
+    margin: 0 auto;
+}
+.form-wrap{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
 
+}
+
+.product-form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="tel"] {
+    font-family: 'Etudenoireregular';
+    width: 100%;
+    padding: 0 10px  15px   10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 24px;
+    outline: none;
+  }
+  input::placeholder {
+    color: black;
+    font-size: 24px;
+  }
+  
+  .color-h{
+    font-family: 'Etudenoireregular';
+      font-weight: 400;
+      font-size: 24px;
+
+  }
+
+  .color-set{
+    padding: 0 10px  15px   10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .color-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .color-options label {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .color-circle.white {
+    background-color: #fff;
+  }
+  
+  .color-circle.black {
+    background-color: #000;
+  }
+  
+  .color-circle.purple {
+    background-color: #7e57c2;
+  }
+  
+  input[type="radio"]:checked + .color-circle {
+    border-color: #000;
+  }
+  
+  button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background: #333;
+  }
 /* s8 */
 .rew-btn-mob{
     display: none;
@@ -373,7 +483,7 @@ gap: 50px;
     line-height: 270px;
    }
    .three-tw{
-    font-size: 100px ;
+    font-size: 97px ;
     line-height: 90px;
 
 
@@ -429,8 +539,8 @@ gap: 50px;
     .s-2{
         padding-left: 30px;
     }  
-      .st-hover p {
-font-size: 50px;
+    .st-hover p {
+        font-size: 40px;
     }
  }
  
@@ -439,6 +549,9 @@ font-size: 50px;
 
 
     @media (max-width: 1260px){
+        .form-wrap{
+            gap: 50px;
+        }
         .inf-pr-list{
             grid-template-columns: repeat(2, auto);
             gap: 50px;
@@ -452,7 +565,7 @@ font-size: 200px;
         }
 
         .three-tw{
-            font-size: 56px;
+            font-size: 52px;
             line-height: 50px;
         }
 
@@ -471,7 +584,7 @@ font-size: 200px;
         
         }
         .choose-two{
-            font-size: 80px;
+            font-size: 74px;
             line-height: 80.83px;
         
         }
@@ -479,6 +592,19 @@ font-size: 200px;
 
     }
 @media (max-width: 1100px){
+    .form-title{
+        max-width: 372px;
+        font-size: 42px;
+    }
+    .s-form{
+        display: flex;
+        justify-content: center;
+    }
+    .form-wrap{
+        flex-direction: column;
+        justify-content: left;
+        
+    }
     .s-8{
         padding: 30px 20px 30px 20px;
     }
@@ -505,12 +631,12 @@ font-size: 200px;
     }
 
         .choose-one{
-            font-size: 100px;
+            font-size: 96px;
             line-height: 100.05px;
         
         }
         .choose-two{
-            font-size: 60px;
+            font-size: 55px;
             line-height: 60.83px;
         
         }
@@ -584,7 +710,7 @@ width: 320px;
       flex-direction: column;
     } 
      .st-hover p {
-        font-size: 96px;
+        font-size: 40px;
             }
 
     /* s2 */ 
@@ -668,9 +794,7 @@ font-size: 16px;
         text-align: right;
 
     }
-    .st-hover p{
-        font-size: 50px;
-    }
+
     .info-product-one{
         padding: 30px;
     }
@@ -712,6 +836,17 @@ line-height: 21px;
 
 
 @media (max-width: 440px){
+    .form-title{
+        max-width: 320px;
+        font-size: 32px;
+    }
+    .product-form{
+        max-width: 320px;
+    }
+    input[type="text"], input[type="tel"], .color-h {
+        font-size: 16px;
+    }
+    
     .info-product {
         padding: 50px 20px;
     }

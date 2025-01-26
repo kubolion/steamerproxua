@@ -35,6 +35,19 @@ html{
   src:url('fonts/etudenoirebold.ttf') format('truetype') ;
 }
 
+@font-face{
+
+  font-family: 'slimbl';
+  src:url('./fonts/RG-SlimBlackItalic.ttf') format('truetype') ;
+  src: url('./fonts/RG-SlimBook.ttf');
+  src: url('./fonts/./RG-SlimBlackItalic.ttf');
+  src: url('./fonts/./RG-SpaciousBook.ttf');
+  src: url('./fonts/./RG-StandardBold.ttf');
+  src: url('./fonts/RG-StandardMedium.ttf');
+  src: url('./fonts/RG-StandardSemibold.ttf');
+  src: url('./fonts/RG-StandardSemiboldItalic.ttf');
+}
+
 body{
   font-family: 'Etudenoiremedium', sans-serif;
   font-weight: 700;
