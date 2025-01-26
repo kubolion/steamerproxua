@@ -202,31 +202,30 @@
 замовлення!
                 </p>
             </div>
-                <form class="product-form">
-                    <input type="text" id="name" name="name" placeholder="Ім’я" required>
-                  
-                    <input type="tel" id="phone" name="phone " placeholder="Телефон"  required>
-                  <div class="color-set">
-                                        <label class="color-h">Колiр</label>
-                    <div class="color-options">
-                      <label>
-                        <input type="radio" name="color" value="white" required>
-                        <span class="color-circle white"></span>
-                      </label>
-                      <label>
-                        <input type="radio" name="color" value="black">
-                        <span class="color-circle black"></span>
-                      </label>
-                      <label>
-                        <input type="radio" name="color" value="purple">
-                        <span class="color-circle purple"></span>
-                      </label>
-                    </div>
+            <form id="product-form" class="product-form">
+                <input type="text" id="name" name="name" placeholder="Ім’я" required>
+                <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                
+                <div class="color-set">
+                  <label class="color-h">Колiр</label>
+                  <div class="color-options">
+                    <label>
+                      <input type="radio" name="color" value="white" required>
+                      <span class="color-circle white"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="color" value="black">
+                      <span class="color-circle black"></span>
+                    </label>
+                    <label>
+                      <input type="radio" name="color" value="purple">
+                      <span class="color-circle purple"></span>
+                    </label>
                   </div>
-
-                  
-                    <button type="submit">ВІДПРАВИТИ</button>
-                  </form>
+                </div>
+                
+                <button type="submit">ВІДПРАВИТИ</button>
+              </form>
                   
 
                 
@@ -508,6 +507,20 @@
               }
            });
         });
+     </script>
+     <script>
+        // Получаем форму по ID
+document.getElementById("product-form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Предотвращаем стандартное поведение формы
+  
+  // Здесь можно вставить код отправки формы через AJAX, если требуется
+  
+  // Отображаем сообщение об успешной отправке
+  alert("Форма успешно отправлена! Спасибо за ваш запрос.");
+  
+  // Дополнительно: если форма должна сбрасываться после отправки
+  this.reset();
+});
      </script>
 
 </body>
