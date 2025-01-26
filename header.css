@@ -142,7 +142,6 @@ gap: 30px;
     @media (max-width: 1440px){
        .steamerf{
           width: 1440px;
-          /* height: 900px; */
           height: auto;
           overflow: hidden;
        }

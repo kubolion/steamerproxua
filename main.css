@@ -246,10 +246,10 @@ line-height:189.05px;
     gap: 20px;
 }
 .comp{
+    width: 590px;
     border: 1px solid #252525;
 }
 .comp-name{
-    width: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -577,7 +577,10 @@ font-size: 200px;
             padding-top: 6px;
         } */
 
-        /* s6 */
+        /* s6 */ 
+        .comp{
+        max-width: 400px;
+    }
         .choose-one{
             font-size: 130px;
             line-height: 130.05px;
@@ -672,6 +675,9 @@ font-size: 200px;
                 padding: 50px;
             }
     /* s6 */
+    .comp{
+        max-width: 320px;
+    }
     .comp-name{
 width: 320px;
     }
@@ -764,7 +770,11 @@ display: block;
     .choose-comp{
         flex-direction: column;
     }
+    .comp{
+        max-width: 400px;
+    }
     .comp-name{
+
         width: 400px;
             }
             /* s8 */
@@ -810,9 +820,8 @@ line-height: 42px;
 font-size: 20px;
 line-height: 21px;
     }
-    .comp-name{
-        width: 320px;
-            } 
+   
+ 
     .logo-ch{
         width: 140px;
         height: 30px;
@@ -849,6 +858,9 @@ line-height: 21px;
     
     .info-product {
         padding: 50px 20px;
+    }
+    .comp{
+        max-width: 320px;
     }
     .comp-name{
         width: 320px;
