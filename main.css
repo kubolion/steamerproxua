@@ -20,7 +20,7 @@ flex-direction: row;
     position: absolute;
     /* max-width: 959px; */
     /* height: auto; */
-    /* background-color: black; */
+    /*    background-color: #0D0D0D; */
     z-index: 999;
     position: absolute;
     top: 0;
@@ -83,10 +83,10 @@ text-decoration-skip-ink: none;
     color: white;
     padding-top: 80px;
     padding-left: 120px;
-    background-color: black;
+       background-color: #0D0D0D;
 }
 .st-color{
-    background-color: black;
+       background-color: #0D0D0D;
     display: flex;
     gap: 120px;
 }
@@ -193,7 +193,7 @@ justify-content: space-between;
     border-top: 1px solid white;
 }
 .s-4{
-    background-color: black;
+       background-color: #0D0D0D;
 }
 
 
@@ -215,7 +215,7 @@ justify-content: space-between;
 .s-6{
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: black;
+       background-color: #0D0D0D;
     color: white;
 }
 .choose{
@@ -290,7 +290,7 @@ iframe{
     display: none;
 }
 .s-8{
-    background-color: black;
+       background-color: #0D0D0D;
     color: white;
     padding: 50px;
     display: flex;
