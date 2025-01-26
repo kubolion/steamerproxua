@@ -476,13 +476,7 @@ font-size: 200px;
         
         }
         /* s8 */
-        .rew-btn-mob{
-            margin: 0 auto;
-            display: block;
-        }
-        .btn-rew{
-            display: none;
-        }
+
     }
 @media (max-width: 1100px){
     .s-8{
@@ -528,6 +522,13 @@ font-size: 200px;
 
 
 @media (max-width: 900px){
+    .rew-btn-mob{
+        margin: 0 auto;
+        display: block;
+    }
+    .btn-rew{
+        display: none;
+    }
     .inf-pr-list{
         grid-template-columns: repeat(1, 1fr);
         gap: 40px;
