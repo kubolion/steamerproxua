@@ -18,21 +18,29 @@ html{
 
   font-family: 'Etudenoireregular';
   src:url('./fonts/etudenoireregular.ttf') format('truetype') ;
+  font-display: swap;
+
 }
 @font-face{
 
   font-family: 'Etudenoirelight';
   src:url('./fonts/etudenoirelight.ttf') format('truetype') ;
+  font-display: swap;
+
 }
 @font-face{
 
   font-family: 'Etudenoiremedium';
   src:url('./fonts/etudenoiremedium.ttf') format('truetype') ;
+  font-display: swap;
+
 }
 @font-face{
 
   font-family: 'Etudenoirebold';
   src:url('./fonts/etudenoirebold.ttf') format('truetype') ;
+  font-display: swap;
+
 }
 
 body{
@@ -40,7 +48,6 @@ body{
   font-weight: 700;
   font-style: normal;
   display: flex;
-  font-display: swap;
   flex-direction: column;
   max-width: 1920px;
   margin: 0 auto; background: #7a79798c;
