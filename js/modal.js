@@ -7,7 +7,7 @@ const closeButtons = document.querySelectorAll(".close");
 // Обрабатываем клик на изображение
 images.forEach((img, index) => {
   img.addEventListener("click", function() {
-    modals[index].style.display = "block"; // Показываем модальное окно соответствующего изображения
+    modals[index].style.display = "block"; // Показываем модальное окно
     modalImages[index].src = this.src; // Устанавливаем источник изображения для модального окна
   });
 });
@@ -16,12 +16,33 @@ images.forEach((img, index) => {
 closeButtons.forEach(button => {
   button.addEventListener("click", function() {
     const modalId = this.getAttribute("data-modal");
-    document.getElementById(modalId).style.display = "none"; // Скрываем модальное окно
+    const modalToClose = document.getElementById(modalId);
+    if (modalToClose) {
+      modalToClose.style.display = "none"; // Скрываем модальное окно
+    }
+  });
+  
+  // Добавление обработчика события для мобильных устройств
+  button.addEventListener("touchstart", function() {
+    const modalId = this.getAttribute("data-modal");
+    const modalToClose = document.getElementById(modalId);
+    if (modalToClose) {
+      modalToClose.style.display = "none"; // Скрываем модальное окно
+    }
   });
 });
 
 // Закрытие модального окна при клике за его пределами
 window.addEventListener("click", function(event) {
+  modals.forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = "none"; // Закрываем модальное окно
+    }
+  });
+});
+
+// Добавление обработчика для мобильных устройств
+window.addEventListener("touchstart", function(event) {
   modals.forEach(modal => {
     if (event.target === modal) {
       modal.style.display = "none"; // Закрываем модальное окно
