@@ -6,23 +6,25 @@ const closeButtons = document.querySelectorAll(".close");
 
 // Обрабатываем клик на изображение
 images.forEach((img, index) => {
-  img.onclick = function() {
+  img.addEventListener("click", function() {
     modals[index].style.display = "block"; // Показываем модальное окно соответствующего изображения
     modalImages[index].src = this.src; // Устанавливаем источник изображения для модального окна
-  };
+  });
 });
 
 // Обрабатываем клик на кнопку закрытия
 closeButtons.forEach(button => {
-  button.onclick = function() {
+  button.addEventListener("click", function() {
     const modalId = this.getAttribute("data-modal");
     document.getElementById(modalId).style.display = "none"; // Скрываем модальное окно
-  };
+  });
 });
 
 // Закрытие модального окна при клике за его пределами
-window.onclick = function(event) {
-  if (event.target.classList.contains("modal")) {
-    event.target.style.display = "none";
-  }
-};
+window.addEventListener("click", function(event) {
+  modals.forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = "none"; // Закрываем модальное окно
+    }
+  });
+});
