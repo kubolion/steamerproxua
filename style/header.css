@@ -3,12 +3,8 @@
     width: 100%; 
     background-size: cover;
     background-color: black  ;
-    /* background-image: url(/image/mainsteam.svg); */
-    /* background-repeat: no-repeat; */
     background-repeat: round no-repeat; 
     background-size: contain;
-    
-     
 }
 .header-nav{
     display: flex;
