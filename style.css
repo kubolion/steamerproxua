@@ -1147,8 +1147,7 @@ display: block;
 }
 
  .steamerf{
- width: 1100px;
- /* height: 900px; */
+ width: 1200px;
  height: auto;
  overflow: hidden;
 }
@@ -1211,9 +1210,9 @@ display: block;
  .steamerf{
     pointer-events: none;
     width: 985px ;
-    margin-top: -80px;
-    margin-left: 50px;
-    min-height: 682px;
+    margin-top: 40px;
+    margin-left: 80px;
+    min-height: 510px;
  }
 
  .gradient-overlay {
@@ -1224,7 +1223,7 @@ display: block;
     font-size: 16px;
  }
  .btn-st{
-    bottom: -160px;
+    bottom: -240px;
  }
  .timer-wraper{
     gap: 20px;
