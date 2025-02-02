@@ -112,6 +112,7 @@ section{
 .main-steam{  
   padding-top: 40px; 
   width: 100%; 
+  min-height: 700px;
   background-size: cover;
   background-color: black  ;
   background-repeat: round no-repeat; 
@@ -266,6 +267,11 @@ gap: 30px;
   .st,.ir{
       position: relative;
       cursor: pointer;
+  }
+  
+  .st,.ir img{
+    max-width: 100%;
+    height: auto;
   }
   
   .st-hover{
