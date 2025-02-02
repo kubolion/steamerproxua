@@ -12,20 +12,14 @@ images.forEach((img, index) => {
   });
 });
 
-// Обрабатываем клик на кнопку закрытия
+// Обрабатываем клик на кнопку закрытия (span с классом close)
 closeButtons.forEach(button => {
-  button.addEventListener("click", function() {
-    const modalId = this.getAttribute("data-modal");
-    const modalToClose = document.getElementById(modalId);
-    if (modalToClose) {
-      modalToClose.style.display = "none"; // Скрываем модальное окно
-    }
-  });
-  
+
   // Добавление обработчика события для мобильных устройств
   button.addEventListener("touchstart", function() {
     const modalId = this.getAttribute("data-modal");
     const modalToClose = document.getElementById(modalId);
+    
     if (modalToClose) {
       modalToClose.style.display = "none"; // Скрываем модальное окно
     }

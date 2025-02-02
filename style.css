@@ -746,6 +746,7 @@ gap: 30px;
   }
   
   .close {
+    pointer-events: none;
     position: absolute;
     top: 15px;
     right: 35px;
